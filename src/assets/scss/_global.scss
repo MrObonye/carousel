@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%; /* 16px is default, 16px * 62.5 = 10px => 1rem */
+  box-sizing: border-box; /* makes it easier to manage boxes */
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "./whatareyouhere";
+
+@import "./getadevice";
+
+@import "./getasim";
+
+@import "./addphone";
+
+@import "./mobileinternent";
+
+@import "./homeinternet";
+
+@import "./arrow1";
+
+@import "./arrow";
