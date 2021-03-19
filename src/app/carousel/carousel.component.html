@@ -1,10 +1,13 @@
-<swiper
-      [slidesPerView]="3"
-      [spaceBetween]="50"
-      (swiper)="onSwiper($event)"
-      (slideChange)="onSlideChange()"
-    >
-      <ng-template swiperSlide>Slide 1</ng-template>
-      <ng-template swiperSlide>Slide 2</ng-template>
-      <ng-template swiperSlide>Slide 3</ng-template>
-    </swiper>
+<swiper [config]="config" class="swiper">
+  <div *ngFor="let slide of slides" class="swiper-slide cell">
+      <div class="item-image">
+        <i class="far fa-images"></i>
+      </div>
+      <div class="item-title">{{slide.title}}</div>
+      <div class="item-button">
+          <a (click)="openLink()">{{slide.action}} <i class="fas fa-chevron-right"></i></a>
+      </div>
+  </div>
+</swiper>
+
+

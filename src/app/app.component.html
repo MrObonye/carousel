@@ -1,8 +1,29 @@
 <div class="grid-container">
   <app-navbar></app-navbar>
   <div class="container">
-    <app-carousel></app-carousel>
+    <div class="row">
+      <div class="col-2">
+        <div class="what-are-you-here-to">What are you <strong>here to do?</strong> </div>
+      </div>
+      <div class="col-12"></div>
+    </div>
+    <div class="row d-flex justify-self-center">
+      <app-carousel></app-carousel>
+    </div>
+    <div class="row d-flex justify-content-between">
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="arrow d-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></span>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <span class="arrow d-flex justify-content-center align-items-center">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+
+      </div>
+    </div>
   </div>
+
 </div>
 
 

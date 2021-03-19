@@ -12,6 +12,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.swiper-container{
+  overflow: inherit!important;
+}
 
 @import "./whatareyouhere";
 
@@ -28,3 +31,6 @@ body {
 @import "./arrow1";
 
 @import "./arrow";
+
+@import './cards';
+
