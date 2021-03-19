@@ -1,0 +1,19 @@
+.grid-container {
+  height: 880px;
+  width: 1080px;
+  opacity: 0.16;
+  @media (min-width: 1080px) {
+    height: 880px;
+    width: 1080px;
+  }
+
+  @media (min-width: 1366px) {
+    height: 1024px;
+    width: 1440px;
+  }
+
+  @media (min-width: 1920px) {
+    height: 1080px;
+    width: 1920px;
+  }
+}
