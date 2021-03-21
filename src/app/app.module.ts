@@ -15,7 +15,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent
   ],
   imports: [
     BrowserModule,
