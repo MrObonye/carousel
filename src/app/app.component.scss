@@ -1,19 +1,15 @@
-@import './../assets/scss/variables';
+@import "./../assets/scss/variables";
 * {
   box-sizing: border-box;
 }
 
-
-
 .footer-container {
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
-
-
 
 .swiper-slide:after {
   content: "-";
-  height: 3px;
+  height: 0.1875rem;
   position: fixed;
   width: 100%;
   left: 0;
@@ -23,8 +19,8 @@
 }
 
 .swiper-slide-active {
-  height: 564px;
-  width: 368px;
+  height: 35.25rem;
+  width: 23rem;
   transform: scale(2);
   animation: ease;
   // animation-name: run;
@@ -32,13 +28,17 @@
   background: linear-gradient(180deg, #373737 0%, #191919 100%);
   border-bottom-width: 0px;
   /* border: 2px solid rgba(150,150,150,0.08); */
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.32);
   z-index: 990;
-  margin-left: 100px !important;
-  margin-right: 100px !important;
+  margin-left: 6.25rem !important;
+  margin-right: 6.25rem !important;
   @media (min-width: 1366px) {
-    width: 424px;
-    height: 564px;
+    width: 26.5rem;
+    height: 535.25rem;
+  }
+  @media (min-width: 1920px) {
+    width: 26.5rem;
+    height: 535.25rem;
   }
 }
 
@@ -59,13 +59,12 @@
 }
 .item-image .placeholder {
   border: 1px solid #979797;
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .swiper-slide-active .item-title {
   color: #f5f5f5;
@@ -73,12 +72,12 @@
 
 .item-button a {
   display: none;
-  font-size: 9px;
+  font-size: 0.5625rem;
   color: #f5f5f5;
   font-family: "Work Sans";
   font-weight: bold;
   letter-spacing: 0.2px;
-  line-height: 28px;
+  line-height: 1.75rem;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -93,7 +92,12 @@
   position: inherit;
   outline: none;
   @media (min-width: 1366px) {
-    left: 78px!important;
+    left: 4.875rem !important;
+    top: -5.625rem;
+  }
+  @media (min-width: 1920px) {
+    left: -15.25rem !important;
+    top: -14.8125rem;
   }
 }
 
@@ -105,14 +109,26 @@
   top: auto;
   position: inherit;
   margin-left: auto;
-  margin-right: 5px;
+  margin-right: 0.3125rem;
   outline: none;
   @media (min-width: 1366px) {
-    margin-right: 56px;
+    margin-right: 3.5rem;
+    top: -5.625rem;
+  }
+  @media (min-width: 1920px) {
+    margin-right: 4.125rem;
+    top: -15.625rem;
+    right: 19.125rem;
+  }
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  @media (min-width: 1920px) {
+    left: auto;
+    right: 19rem;
   }
 }
 .swiper-button-next:after {
   content: "";
 }
-
-

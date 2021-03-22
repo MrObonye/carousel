@@ -1,4 +1,5 @@
 .page-wrapper {
+  height: 100vh;
   @media (min-width: 1366px) {
     margin-left: 60px;
     margin-right: 60px;
@@ -10,7 +11,7 @@
   justify-content: space-between;
 
   @media (min-width: 1336px) {
-    margin-top: 160px;
+    margin-top: 20px;
   }
   @media (min-width: 1920px) {
     margin-top: 160px;
@@ -35,8 +36,9 @@
       line-height: 40px;
       font-size: 32px;
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1918px) {
       width: 216px;
+      margin-left: -137px;
     }
 
     .fw-light {
@@ -54,7 +56,7 @@
   // opacity: 0.16;
 
   @media (min-width: 1366px) {
-    height: 353px;
+    height: 473px;
     width: 1440px;
     min-width: 1440px;
     left: 109px;
@@ -93,9 +95,10 @@
       }
     }
     @media (min-width: 1920px) {
-      height: 300px;
+      height: 600px;
       width: 1920px;
       max-width: 1920px;
+      left: 397px;
       .cell {
         width: 216px;
       }

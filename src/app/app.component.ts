@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
       },
       1920: {
         slidesPerView: 5,
-        spaceBetween: 34,
+        spaceBetween: 24,
         centeredSlides: true,
       }
     }
