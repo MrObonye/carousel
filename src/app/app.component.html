@@ -1,57 +1,44 @@
 <app-navbar></app-navbar>
-<main>
-  <div id="picker" class="picker">
-    <div class="cell">
-      <div class="cell-content">Card 1</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 2</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 3</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 4</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 5</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 6</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 7</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 8</div>
-    </div>
-  </div>
-</main><main>
-  <div id="picker" class="picker">
-    <div class="cell">
-      <div class="cell-content">Card 1</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 2</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 3</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 4</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 5</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 6</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 7</div>
-    </div>
-    <div class="cell">
-      <div class="cell-content">Card 8</div>
-    </div>
-  </div>
-</main>
 
+<div class="d-block carousel-wrapper">
+  <div class="row ">
+    <div class="col-2"></div>
+    <div class="col d-block">
+      <div class="what-are-you-here-to"><span class="fw-light">What are you </span>here to do?</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="wrapper container">
+  <swiper [config]="config">
+    <div *ngFor="let slide of slides" class="swiper-slide cell d-flex justify-content-center align-items-center">
+      <div class="item-image">
+        <i class="fa fa-images display-3"></i>
+      </div>
+      <div class="item-title">{{slide.title}}</div>
+      <div class="item-button">
+        <a (click)="gotoLink(slide.link)">{{slide.action}} <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </swiper>
+</div>
+
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-2">
+      <div class="swiper-button-prev custom-swiper-button-prev">
+        <span class="arrow d-flex justify-content-center align-items-center"><i class="fas fa-chevron-left"></i></span>
+      </div>
+    </div>
+    <div class="col-5"></div>
+    <div class="col-2">
+      <div class="swiper-button-next custom-swiper-button-next">
+        <span class="arrow d-flex justify-content-center align-items-center"><i class="fas fa-chevron-right"></i></span>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
