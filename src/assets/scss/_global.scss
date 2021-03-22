@@ -1,3 +1,4 @@
+@import './variables';
 nav {
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
@@ -105,7 +106,7 @@ nav ul li {
     border-radius: 50%;
     color: white;
     &:hover {
-      background-color: yellow;
+      background-color: $primary-sunshine;
     }
   }
 

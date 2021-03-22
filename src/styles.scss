@@ -47,3 +47,7 @@ ul {
  .swiper-slide-next {
     margin-left: 16px;
   }
+
+.swiper-slide-active > div.item-button {
+    margin: 35px;
+  }

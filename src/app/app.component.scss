@@ -1,11 +1,6 @@
+@import './../assets/scss/variables';
 * {
   box-sizing: border-box;
-}
-
-
-
-.header-container {
-  margin-left: 4px;
 }
 
 
@@ -31,7 +26,7 @@
   height: 564px;
   width: 368px;
   transform: scale(2);
-  // animation: linear infinite alternate;
+  animation: ease;
   // animation-name: run;
   // animation-duration: 1s;
   background: linear-gradient(180deg, #373737 0%, #191919 100%);
@@ -44,7 +39,7 @@
 }
 
 .swiper-slide-active:after {
-  background-color: #ffc000;
+  background-color: $primary-sunshine;
 }
 
 .item-image {
