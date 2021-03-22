@@ -36,6 +36,10 @@
   z-index: 990;
   margin-left: 100px !important;
   margin-right: 100px !important;
+  @media (min-width: 1366px) {
+    width: 424px;
+    height: 564px;
+  }
 }
 
 .swiper-slide-active:after {
@@ -88,6 +92,9 @@
   top: auto;
   position: inherit;
   outline: none;
+  @media (min-width: 1366px) {
+    left: 78px!important;
+  }
 }
 
 .swiper-button-prev:after {
@@ -100,6 +107,9 @@
   margin-left: auto;
   margin-right: 5px;
   outline: none;
+  @media (min-width: 1366px) {
+    margin-right: 56px;
+  }
 }
 .swiper-button-next:after {
   content: "";

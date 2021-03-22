@@ -20,8 +20,6 @@ export class AppComponent implements OnInit {
 
   public config: SwiperConfigInterface = {
     direction: 'horizontal',
-    slidesPerView: 5,
-    spaceBetween: 16,
     keyboard: true,
     mousewheel: false,
     scrollbar: false,
@@ -37,6 +35,15 @@ export class AppComponent implements OnInit {
         slidesPerView: 5,
         spaceBetween: 16,
       },
+      1366: {
+        slidesPerView: 5,
+        spaceBetween: 34,
+      },
+      1920: {
+        slidesPerView: 5,
+        spaceBetween: 34,
+        centeredSlides: true,
+      }
     }
   };
 
@@ -44,15 +51,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  onSwiper(swiper) {
-    console.log(swiper);
-  }
-  onSlideChange() {
-    console.log('slide change');
-  }
-
-
 
   gotoLink(link: string) {
     console.log('goto link', link);

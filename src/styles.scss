@@ -2,12 +2,13 @@
 @import './assets/scss/global';
 @import './assets/scss/variables';
 @import './assets/scss/1080';
+@import './assets/scss/1366';
 
 /* Font Family */
 html, body {
     font-family: 'Work Sans', sans-serif;
     scroll-behavior: smooth;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     background-color: #ddd;
 }
 ul {
@@ -39,6 +40,9 @@ ul {
     width: 100%;
     height: 100%;
     overflow: visible !important;
+    @media (min-width: 1366px) {
+
+    }
   }
 
   swiper>.swiper.s-wrapper .swiper-wrapper .swiper-slide {
@@ -46,6 +50,9 @@ ul {
   }
  .swiper-slide-next {
     margin-left: 16px;
+    @media (min-width: 1366px) {
+      margin-left: 34px;
+    }
   }
 
 .swiper-slide-active > div.item-button {
